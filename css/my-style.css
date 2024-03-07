@@ -1,0 +1,343 @@
+/* Основные стили */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Заголовок страницы */
+.page-title-shown {
+  flex-grow: 1;
+}
+
+/* Подвал */
+.footer {
+  flex-shrink: 0;
+}
+
+/* Контейнер постов */
+.post-container {
+  display: flex;
+}
+
+/* Посты различных типов */
+.services-post {}
+.prices-post {}
+.post-baza {}
+
+/* Кнопки категорий */
+.button-category {
+  cursor: pointer;
+}
+
+/* Элементы постов в контейнере */
+.post-container .post-item {
+  width: 300px;
+  padding: 15px;
+}
+
+/* Первый и последний посты в контейнере */
+.post-container .post-item:nth-child(2) {
+  border-left: 1px solid #4d3939;
+  border-right: 1px solid #4d3939;
+}
+
+/* Заголовок поста */
+.post-container .post-item h3 a {
+  color: #ecd8bd !important;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Текст поста */
+.post-container .post-item p {
+  font-family: Acme;
+  color: #dfdfdf;
+  font-size: 18px;
+}
+
+/* Последний параграф в посте */
+.post-container .post-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Шорткоды */
+.shortcode-post {
+  color: aliceblue;
+  width: 400px;
+}
+
+.shortcode-post h2 a {
+  color: #dfdfdf;
+}
+
+.shortcode-link {
+  color: #2b65f6;
+}
+
+/* Активная кнопка категории */
+.active-button-category {
+  border-left: 3px solid #ecd8bd;
+}
+
+/* Элементы тестимониалов */
+.elementor-testimonial {
+  position: relative;
+  height: 100%;
+}
+
+.elementor-testimonial__content {
+  margin-bottom: 72px;
+}
+
+.elementor-testimonial__footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Скрытие шрифтовых иконок */
+.e-font-icon-svg {
+  display: none;
+}
+
+/* Стили кнопок слайдера */
+.elementor-swiper-button {
+  width: 56px;
+  height: 56px;
+}
+
+.elementor-swiper-button-next {
+  background: url("../images/right.svg") no-repeat;
+  background-size: contain;
+  right: -8px !important;
+}
+
+.elementor-swiper-button-prev {
+  background: url("../images/left.svg") no-repeat;
+  left: -8px !important;
+  background-size: contain;
+}
+
+/* Пользовательское меню */
+.custom-header-menu {
+  font-family: "Merriweather";
+  font-weight: 400;
+}
+
+/* Ховер на ссылках меню */
+.menu-link:hover {
+  font-size: 27px !important;
+}
+
+/* Стили поисковой строки */
+.dgwt-wcas-sf-wrapp {
+  background-color: #21212100 !important;
+  background: #21212100 !important;
+}
+
+/* Скрытие заголовка записи */
+.entry-header {
+  display: none;
+}
+
+/* Скрытие шапки магазина */
+.shop_header {
+  display: none;
+}
+
+/* Область контента */
+.content-area {
+  padding: 85px 0 104px 0 !important ;
+}
+
+/* Стили сортировки */
+.orderby option {
+  background: #2b2b2b !important;
+}
+
+/* Стили вариаций товара */
+.cfvsw-swatches-option {
+  background: #2b2b2b;
+}
+
+/* Дополнительные стили для сортировки и меню */
+.orderby,
+.menu_order {
+  background: #2b2b2b;
+}
+
+/* Стили для кнопок добавления в избранное */
+#yith-wcwl-form .wishlist_table .product-stock-status .wishlist-in-stock {
+  color: #dfdfdf;
+}
+
+#yith-wcwl-form .wishlist_table .product-add-to-cart .add_to_cart {
+  background: #a46a04;
+}
+
+/* Стили для кнопок удаления из избранного */
+#yith-wcwl-form .wishlist_table .product-remove a.remove:before {
+  border: 1px solid #646363;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+/* Дополнительные стили для кнопок удаления из избранного */
+.woocommerce-cart .woocommerce-cart-form .shop_table.cart tbody tr td.product-remove > a:after {
+  border: 1px solid #646363;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.woocommerce-cart .woocommerce-cart-form .shop_table.cart tbody tr td.product-remove > a:after {
+  font-size: 21px !important;
+}
+
+/* Скрытие заголовка элемента */
+.elementor-39 .elementor-element.elementor-element-49083bd .elementor-heading-title {
+  display: none;
+}
+
+/* Стили контейнера услуг */
+.xt_woofc-wrapper {
+  bottom: 155px !important;
+}
+
+/* Стили элементов услуг */
+.post-service__items {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+/* Стили отдельного элемента услуги */
+.post-service__item {
+  display: grid;
+  font-family: Merriweather;
+  font-size: 18px;
+  font-weight: 400;
+  grid-template-columns: 1.7fr 1fr 1fr;
+  justify-items: start;
+  border-bottom: 1px solid #4f4f4f;
+  padding-bottom: 6px;
+}
+
+/* Блок элемента */
+.item_block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Текст элемента */
+.item_text {
+  font-size: 24px;
+  color: #dfdfdf;
+}
+
+/* Услуги элемента */
+.item_services {
+  color: #bdbdbd;
+}
+
+/* Цена элемента */
+.item_pice {
+  color: #ecd8bd;
+  width: 120px;
+  text-align: end;
+}
+
+/* Ссылка на элемент */
+.item_link {
+  display: flex;
+  color: #ecd8bd;
+  align-items: center;
+  gap: 5px;
+}
+
+.item_link p {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  gap: 6px;
+}
+
+/* Активная кнопка категории на странице и в постах */
+.active-button-category-page a,
+.active-button-post-services a {
+  border-bottom: 1px solid #ecd8bd;
+  color: #ecd8bd;
+}
+
+/* Индикатор загрузки */
+.loading-indicator {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto;
+}
+
+/* Анимация вращения для индикатора загрузки */
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Текстовый блок "О нас" */
+.about-text-p p {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* Скрытие заголовка поста */
+.single-post-header {
+  display: none;
+}
+
+/* Контейнер информации о постах */
+.post-info-services {
+  display: none;
+}
+
+/* Активное состояние информации о постах */
+.active-info-post-services {
+  display: block;
+}
+
+/* Стили элементов списка информации о постах */
+.post-info-services li {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-weight: 300;
+  color: #F7F7F7;
+}
+
+/* Стили списка информации о постах */
+.post-info-services ul {
+  line-height: 43px;
+  list-style: url('../images/romb.png');
+}
+
+/* Медиа-запрос для уменьшения размеров кнопок слайдера на мобильных устройствах */
+@media (max-width: 1000px) {
+  .elementor-swiper-button {
+      width: 45px;
+      height: 42px;
+  }
+}

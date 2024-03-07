@@ -1,0 +1,5 @@
+.gitattributes export-ignore  
+.gitignore export-ignore
+.codeclimate.yml export-ignore
+makearchive.bat export-ignore
+prepros.cfg export-ignore
